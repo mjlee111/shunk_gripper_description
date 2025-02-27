@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- # Description: URDF model for the SCHUNK gripper
+# Author : Myeong Jin Lee
+# Date : 2025-02-27 -->
+<robot name="shunk_gripper">
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh filename="package://shunk_gripper_description/meshes/shunk_motor.dae"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="finger_l">
+        <visual>
+            <geometry>
+                <mesh filename="package://shunk_gripper_description/meshes/left_finger.dae"/>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="finger_r">
+        <visual>
+            <geometry>
+                <mesh filename="package://shunk_gripper_description/meshes/right_finger.dae"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="finger_l_joint" type="prismatic">
+        <parent link="base_link"/>
+        <child link="finger_l"/>
+        <origin xyz="-0.006 -0.105 -0.032" rpy="0 1.57 0"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-0.04" upper="0.0" effort="10.0" velocity="0.1"/>
+    </joint>
+
+    <joint name="finger_r_joint" type="prismatic">
+        <parent link="base_link"/>
+        <child link="finger_r"/>
+        <origin xyz="0.015 -0.105 0.053" rpy="0 1.57 0"/>
+        <axis xyz="-1 0 0"/>
+        <limit lower="-0.04" upper="0.0" effort="10.0" velocity="0.1"/>
+    </joint>
+</robot>
