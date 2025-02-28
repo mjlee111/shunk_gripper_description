@@ -62,7 +62,21 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        elbow_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        end_effector_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -73,6 +87,26 @@ Visualization Manager:
           Show Trail: false
           Value: true
         finger_r:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_pitch_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_roll_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_yaw_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -111,7 +145,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.4491274356842041
+      Distance: 2.216770648956299
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -119,17 +153,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -0.033822543919086456
-        Y: -0.022953825071454048
-        Z: -0.010704551823437214
+        X: 0.1412683129310608
+        Y: 0.0077187903225421906
+        Z: 0.5560795664787292
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.09539797902107239
+      Pitch: 0.7303979992866516
       Target Frame: <Fixed Frame>
-      Yaw: 5.283583641052246
+      Yaw: 3.5285823345184326
     Saved: ~
 Window Geometry:
   Displays:
@@ -147,5 +181,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1200
-  X: 1117
-  Y: 149
+  X: 1085
+  Y: 117
