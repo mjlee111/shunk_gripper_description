@@ -10,6 +10,13 @@
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             </geometry>
         </visual>
+        <inertial>
+            <mass value="2.043549"/>
+            <origin xyz="0.038902 0.017018 0.044141"/>
+            <inertia ixx="3.631" ixy="0.2962" ixz="0.052285"
+                     iyy="3.972" iyz="-0.038303"
+                     izz="3.554"/>
+        </inertial>
     </link>
 
     <link name="finger_l">
@@ -19,6 +26,13 @@
                 <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
             </geometry>
         </visual>
+        <inertial>
+            <mass value="0.046237"/>
+            <origin xyz="0.020173 0.011302 0.01343"/>
+            <inertia ixx="0.052784392" ixy="-0.004778793" ixz="-0.000269796"
+                     iyy="0.010977510" iyz="-0.000966438"
+                     izz="0.054806177"/>
+        </inertial>
     </link>
 
     <link name="finger_r">
@@ -27,6 +41,13 @@
                 <mesh filename="package://shunk_gripper_description/meshes/right_finger.dae"/>
             </geometry>
         </visual>
+        <inertial>
+            <mass value="0.046237"/>
+            <origin xyz="0.020173 0.011302 0.01343"/>
+            <inertia ixx="0.052784392" ixy="-0.004778793" ixz="-0.000269796"
+                     iyy="0.010977510" iyz="-0.000966438"
+                     izz="0.054806177"/>
+        </inertial>
     </link>
 
     <joint name="finger_l_joint" type="prismatic">
